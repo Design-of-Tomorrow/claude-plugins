@@ -2,9 +2,9 @@
 
 A small Claude Code marketplace from [Design of Tomorrow](https://designoftomorrow.au). It has one plugin, **Design of Tomorrow Companion** (`dotc`).
 
-The plugin has one command for now, `/dotc:design-taste`. It loads tasteskill v2 (MIT, by Leonxlnx), art direction that stops pages looking generic. Test release.
+The plugin has two commands. `/dotc:design-taste` loads tasteskill v2 (MIT, by Leonxlnx), art direction that stops pages looking generic. `/dotc:review` reviews the design of a public page with your Design of Tomorrow plan. In this release it checks your account status. The review tools come in the next release.
 
-Needs the latest Claude Code.
+Needs Claude Code 2.1.281 or later.
 
 ## Install
 
@@ -15,13 +15,25 @@ In Claude Code:
 /plugin install dotc@design-of-tomorrow
 ```
 
+## Connect
+
+`/dotc:review` needs a token.
+
+1. Sign in at [app.designoftomorrow.au](https://app.designoftomorrow.au) and create a token on Home.
+2. Install the plugin. Claude Code asks for your Design of Tomorrow token. Paste it. If it didn't ask, or you updated from 0.1.0, run `/plugin configure dotc@design-of-tomorrow`.
+
+The token is stored as a secret and is not shown again.
+
+Replaced your token? In Claude Code, run `/plugin configure dotc@design-of-tomorrow`, paste the new token, then restart Claude Code.
+
 ## Run
 
 ```
 /dotc:design-taste
+/dotc:review https://site.au
 ```
 
-Then describe the page or site you want designed or reviewed.
+For `/dotc:design-taste`, describe the page or site you want designed or reviewed.
 
 ## Update
 
@@ -40,9 +52,9 @@ claude plugin marketplace remove design-of-tomorrow
 
 ## Privacy
 
-The plugin doesn't send anything to us. It runs inside your Claude Code.
+Once you set a token, Claude Code connects to app.designoftomorrow.au with it each time it starts. From the next release, `/dotc:review` also sends the page URL you give it. Without a token the plugin sends nothing. `/dotc:design-taste` sends nothing either way. It runs inside your Claude Code.
 
-It has no server, no hooks and no MCP config, and it writes nothing to your machine.
+The plugin has no hooks and writes nothing to your machine.
 
 ## Support
 
