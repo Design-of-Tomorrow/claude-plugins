@@ -37,7 +37,7 @@ For `/dotc:design-taste`, describe the page or site you want designed or reviewe
 
 For `/dotc:review <url> [focus]`, give a public page and, if you like, what to look at (for example `/dotc:review https://site.au the pricing section`). It shows progress, then the top three findings, three scores and a link to the full review on your dashboard.
 
-After the review it asks three questions: keep or change the page's colours, the tone, and your stack (Tailwind or plain CSS). Then it makes a design system and, if you say yes, writes `design-system/tokens.css` and `design-system/DESIGN.md` into your project.
+After the review it asks three questions: keep or change the page's colours, the tone, and your stack (Tailwind or plain CSS). Then it makes a design system and, if you say yes, writes `design-system/tokens.css` and `design-system/DESIGN.md` into your project. Claude Code asks you to allow the design system call and each of the two file writes.
 
 ## Update
 

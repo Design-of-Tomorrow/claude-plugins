@@ -3,7 +3,7 @@ name: review
 description: Reviews the design of a public web page with your Design of Tomorrow plan, and a design system. Run /dotc:review https://site.au [focus]
 argument-hint: "<url> [focus]"
 disable-model-invocation: true
-allowed-tools: mcp__plugin_dotc_dot__start_review, mcp__plugin_dotc_dot__get_review, mcp__plugin_dotc_dot__create_design_system, Write(design-system/tokens.css), Write(design-system/DESIGN.md), Bash(sleep:*)
+allowed-tools: mcp__plugin_dotc_dot__start_review, mcp__plugin_dotc_dot__get_review, Bash(sleep:*)
 ---
 
 # Design review
