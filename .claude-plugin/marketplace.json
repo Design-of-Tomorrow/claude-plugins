@@ -1,6 +1,6 @@
 {
   "name": "design-of-tomorrow",
-  "description": "Free Claude Code plugins from Design of Tomorrow.",
+  "description": "Claude Code plugins from Design of Tomorrow.",
   "owner": {
     "name": "Design of Tomorrow",
     "email": "hello@designoftomorrow.au"
@@ -9,7 +9,7 @@
     {
       "name": "dotc",
       "source": "./plugins/dotc",
-      "description": "Design of Tomorrow tools for Claude Code. Test release."
+      "description": "Design of Tomorrow tools for Claude Code: /dotc:design-taste and /dotc:review."
     }
   ]
 }

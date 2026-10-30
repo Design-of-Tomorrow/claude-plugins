@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "dot": {
+      "type": "http",
+      "url": "https://app.designoftomorrow.au/api/mcp",
+      "headers": {
+        "Authorization": "Bearer ${user_config.dot_token}"
+      }
+    }
+  }
+}
