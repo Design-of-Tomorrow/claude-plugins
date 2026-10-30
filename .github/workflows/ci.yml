@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Tests and recommendation check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Unit tests
+        run: npm test
+      - name: Check recommendations
+        run: npm run check
+
+  validate:
+    # Separate job on purpose. `claude plugin validate` ran without a login on a
+    # clean HOME locally, but this has not been confirmed on a GitHub runner yet.
+    # Keeping it apart means a problem installing Claude Code doesn't hide the
+    # test results above. If it proves stable, fold it into the job above.
+    name: Claude plugin validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Install Claude Code
+        run: npm i -g @anthropic-ai/claude-code
+      - name: Validate plugin and marketplace
+        run: npm run validate
