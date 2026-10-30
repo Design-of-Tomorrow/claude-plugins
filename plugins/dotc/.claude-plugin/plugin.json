@@ -1,8 +1,8 @@
 {
   "name": "dotc",
   "displayName": "Design of Tomorrow Companion",
-  "version": "0.3.0",
-  "description": "Design of Tomorrow tools for Claude Code. /dotc:design-taste for art direction that stops pages looking generic, and /dotc:review for design reviews with your Design of Tomorrow plan. Needs Claude Code 2.1.281 or later.",
+  "version": "0.4.0",
+  "description": "Design of Tomorrow tools for Claude Code. /dotc:design-taste for art direction that stops pages looking generic, and /dotc:review for design reviews and design systems with your Design of Tomorrow plan. Needs Claude Code 2.1.281 or later.",
   "author": {
     "name": "Design of Tomorrow",
     "email": "hello@designoftomorrow.au",
