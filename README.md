@@ -58,7 +58,7 @@ claude plugin marketplace remove design-of-tomorrow
 
 Once you set a token, Claude Code connects to app.designoftomorrow.au with it each time it starts. `/dotc:review` sends the page URL, any focus you add, your three design system answers, and your token. The design system files are built from the page's measured colours, type and spacing, your answers and the page address. No page text goes into them. Without a token the plugin sends nothing. `/dotc:design-taste` sends nothing either way. It runs inside your Claude Code.
 
-The plugin has no hooks and writes nothing to your machine.
+The plugin has no hooks. After you say yes, `/dotc:review` writes `design-system/tokens.css` and `design-system/DESIGN.md`, and nothing else.
 
 ## Support
 
