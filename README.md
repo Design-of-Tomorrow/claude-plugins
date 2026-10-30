@@ -2,7 +2,7 @@
 
 A small Claude Code marketplace from [Design of Tomorrow](https://designoftomorrow.au). It has one plugin, **Design of Tomorrow Companion** (`dotc`).
 
-The plugin has two commands. `/dotc:design-taste` loads tasteskill v2 (MIT, by Leonxlnx), art direction that stops pages looking generic. `/dotc:review` reviews the design of a public page with your Design of Tomorrow plan. In this release it checks your account status. The review tools come in the next release.
+The plugin has two commands. `/dotc:design-taste` loads tasteskill v2 (MIT, by Leonxlnx), art direction that stops pages looking generic. `/dotc:review` reviews the design of a public page with your Design of Tomorrow plan.
 
 Needs Claude Code 2.1.281 or later.
 
@@ -35,6 +35,8 @@ Replaced your token? In Claude Code, run `/plugin configure dotc@design-of-tomor
 
 For `/dotc:design-taste`, describe the page or site you want designed or reviewed.
 
+For `/dotc:review <url> [focus]`, give a public page and, if you like, what to look at (for example `/dotc:review https://site.au the pricing section`). It shows progress, then the top three findings, three scores and a link to the full review on your dashboard.
+
 ## Update
 
 Third-party marketplaces don't update on their own by default. Run:
@@ -52,7 +54,7 @@ claude plugin marketplace remove design-of-tomorrow
 
 ## Privacy
 
-Once you set a token, Claude Code connects to app.designoftomorrow.au with it each time it starts. From the next release, `/dotc:review` also sends the page URL you give it. Without a token the plugin sends nothing. `/dotc:design-taste` sends nothing either way. It runs inside your Claude Code.
+Once you set a token, Claude Code connects to app.designoftomorrow.au with it each time it starts. `/dotc:review` sends the page URL, any focus you add, and your token. Without a token the plugin sends nothing. `/dotc:design-taste` sends nothing either way. It runs inside your Claude Code.
 
 The plugin has no hooks and writes nothing to your machine.
 
