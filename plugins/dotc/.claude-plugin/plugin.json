@@ -1,7 +1,7 @@
 {
   "name": "dotc",
   "displayName": "Design of Tomorrow Companion",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "Design of Tomorrow tools for Claude Code. /dotc:design-taste for art direction that stops pages looking generic, and /dotc:review for design reviews and design systems with your Design of Tomorrow plan. Needs Claude Code 2.1.281 or later.",
   "author": {
     "name": "Design of Tomorrow",
@@ -11,6 +11,7 @@
   "homepage": "https://designoftomorrow.au",
   "repository": "https://github.com/Design-of-Tomorrow/claude-plugins",
   "license": "MIT",
+  "privacyPolicyUrl": "https://app.designoftomorrow.au/privacy",
   "userConfig": {
     "dot_token": {
       "type": "string",

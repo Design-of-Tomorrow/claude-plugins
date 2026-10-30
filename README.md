@@ -60,6 +60,8 @@ Once you set a token, Claude Code connects to app.designoftomorrow.au with it ea
 
 The plugin has no hooks. After you say yes, `/dotc:review` writes `design-system/tokens.css` and `design-system/DESIGN.md`, and nothing else.
 
+Privacy page: https://app.designoftomorrow.au/privacy. Docs: https://app.designoftomorrow.au/docs.
+
 ## Support
 
 Questions or a bad recommendation? Email [hello@designoftomorrow.au](mailto:hello@designoftomorrow.au).
