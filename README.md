@@ -37,6 +37,8 @@ For `/dotc:design-taste`, describe the page or site you want designed or reviewe
 
 For `/dotc:review <url> [focus]`, give a public page and, if you like, what to look at (for example `/dotc:review https://site.au the pricing section`). It shows progress, then the top three findings, three scores and a link to the full review on your dashboard.
 
+After the review it asks three questions: keep or change the page's colours, the tone, and your stack (Tailwind or plain CSS). Then it makes a design system and, if you say yes, writes `design-system/tokens.css` and `design-system/DESIGN.md` into your project. Claude Code asks you to allow the design system call and each of the two file writes.
+
 ## Update
 
 Third-party marketplaces don't update on their own by default. Run:
@@ -54,9 +56,9 @@ claude plugin marketplace remove design-of-tomorrow
 
 ## Privacy
 
-Once you set a token, Claude Code connects to app.designoftomorrow.au with it each time it starts. `/dotc:review` sends the page URL, any focus you add, and your token. Without a token the plugin sends nothing. `/dotc:design-taste` sends nothing either way. It runs inside your Claude Code.
+Once you set a token, Claude Code connects to app.designoftomorrow.au with it each time it starts. `/dotc:review` sends the page URL, any focus you add, your three design system answers, and your token. The design system files are built from the page's measured colours, type and spacing, your answers and the page address. No page text goes into them. Without a token the plugin sends nothing. `/dotc:design-taste` sends nothing either way. It runs inside your Claude Code.
 
-The plugin has no hooks and writes nothing to your machine.
+The plugin has no hooks. After you say yes, `/dotc:review` writes `design-system/tokens.css` and `design-system/DESIGN.md`, and nothing else.
 
 ## Support
 
