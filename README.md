@@ -20,11 +20,11 @@ In Claude Code:
 `/dotc:review` needs a token.
 
 1. Sign in at [app.designoftomorrow.au](https://app.designoftomorrow.au) and create a token on Home.
-2. Install the plugin. Claude Code asks for your Design of Tomorrow token. Paste it.
+2. Install the plugin. Claude Code asks for your Design of Tomorrow token. Paste it. If it didn't ask, or you updated from 0.1.0, run `/plugin configure dotc@design-of-tomorrow`.
 
 The token is stored as a secret and is not shown again.
 
-Replaced your token? Run `claude plugin configure dotc@design-of-tomorrow` and paste the new one. You can also use `/plugin` and choose Configure.
+Replaced your token? In Claude Code, run `/plugin configure dotc@design-of-tomorrow`, paste the new token, then restart Claude Code.
 
 ## Run
 
@@ -52,7 +52,7 @@ claude plugin marketplace remove design-of-tomorrow
 
 ## Privacy
 
-`/dotc:review` sends the page URL you give it and your token to app.designoftomorrow.au. `/dotc:design-taste` still sends nothing. It runs inside your Claude Code.
+Once you set a token, Claude Code connects to app.designoftomorrow.au with it each time it starts. From the next release, `/dotc:review` also sends the page URL you give it. Without a token the plugin sends nothing. `/dotc:design-taste` sends nothing either way. It runs inside your Claude Code.
 
 The plugin has no hooks and writes nothing to your machine.
 
