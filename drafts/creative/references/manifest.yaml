@@ -1,0 +1,82 @@
+# Colour-fill appearance references. Role: inspect to understand a look; attach to a
+# generation call only one at a time, with the role "fill texture and shadow edges only".
+# Competitor files are research studies, not project assets. Never copy composition,
+# characters or motifs; describe the treatment in words.
+
+- file: looks-side-by-side-b09.jpg
+  look: all
+  role: selection-sheet
+  note: "Same page in 8 looks. Top row: Rich Blend, Soft Pastel, Warm Handmade, Moonlit Magic. Bottom row: Two-Ink Light, Paper Pop, Electric Rose, Clear Storybook. Never attach to a generation call."
+  source: studio test
+- file: look-paper-pop-b09.png
+  look: paper-pop
+  role: studio-example
+  observe: [white-reserve, flat-blocks, hard-edges]
+  source: studio test
+- file: look-electric-rose-b09.png
+  look: electric-rose
+  role: studio-example
+  observe: [single-hue-range, blended-shade, one-light]
+  source: studio test
+- file: competitor-tiles-s02.webp
+  look: moonlit-magic
+  tiles: {s02-t01: "dense night extreme"}
+  role: appearance-study
+  observe: [cool-dominant, small-warm-lights, star-dots]
+  source: competitor screenshot
+- file: competitor-tiles-s03.webp
+  look: moonlit-magic
+  tiles: {s03-t02: "simpler night, candles"}
+  role: appearance-study
+  observe: [local-glow-falloff, hue-shifted-shade]
+  source: competitor screenshot
+- file: competitor-tiles-s04.webp
+  look: [clear-storybook, moonlit-magic]
+  tiles: {s04-t02: "clear storybook", s04-t03: "moonlit cutaway"}
+  role: appearance-study
+  observe: [flat-fill, hard-shadow-step, white-marks]
+  source: competitor screenshot
+- file: competitor-tiles-s05.webp
+  look: [warm-handmade, clear-storybook]
+  tiles: {s05-t02: "warm handmade", s05-t03: "clear storybook"}
+  role: appearance-study
+  observe: [grain, fabric-pattern, palette-distribution]
+  source: competitor screenshot
+- file: competitor-tiles-s06.webp
+  look: [warm-handmade, clear-storybook]
+  tiles: {s06-t04: "crayon half vs marker half", s06-t06: "clear storybook two-panel"}
+  role: appearance-study
+  observe: [crayon-grain, flat-vs-blend]
+  source: competitor screenshot
+- file: competitor-tiles-s11.webp
+  look: electric-rose
+  tiles: {s11-t01: "single pink range"}
+  role: appearance-study
+  observe: [single-hue-value-range]
+  source: competitor screenshot
+- file: competitor-clear-storybook-frame.jpg
+  look: clear-storybook
+  role: appearance-study
+  observe: [flat-fill, hard-shadow-step, subdued-support]
+  source: competitor video frame
+- file: competitor-warm-handmade-frame-1.jpg
+  look: warm-handmade
+  role: appearance-study
+  observe: [grain, warm-masses, cool-accent]
+  source: competitor video frame
+- file: competitor-warm-handmade-frame-2.jpg
+  look: warm-handmade
+  role: appearance-study
+  observe: [texture-dabs, fabric-pattern]
+  source: competitor video frame
+- file: competitor-moonlit-magic-frame.jpg
+  look: moonlit-magic
+  role: appearance-study
+  observe: [warm-light-cores, rim-light, sky-sparkle]
+  source: competitor video frame
+- file: density-standard.png
+  look: line-art
+  role: density-board
+  observe: [stroke-weight, region-size, margin, three-background-masses]
+  note: "Attached to every /line-art call as the last image with the role 'defines line weight, density and margin only'. The cast is painted out: a board that contains characters gets copied as the character design whatever its stated role."
+  source: studio approved page, cast regions whited out
